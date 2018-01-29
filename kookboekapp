@@ -1,0 +1,48 @@
+# informatica
+voor de opdrachten
+<html>
+	<head>
+		<title>KookboekApp</title>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+	</head>
+	<body> 
+			<fieldset>
+				<legend>Vul waarden in voor het recept:
+				</legend>
+				<table>
+				<tr>
+					<td>Ingrediënt 1+lidwoord:</td>
+					<td><input type="text" id="i1" /></td>
+				</tr>
+				<tr>
+					<td>Ingrediënt 2+lidwoord:</td>
+					<td><input type="text" id="i2" /></td>
+				</tr>
+				<tr>
+					<td>Bewerking:</td>
+					<td><input type="text" id="b" /></td>
+				</tr>
+				<tr>
+					<td>Duur:</td>
+					<td><input type="text" id="d" /></td>
+				</tr>
+				</table>
+			</fieldset>
+			<br/>
+			<button type="button" onclick="maakRecept()">Maak recept!</button>
+<p id="r"></p>
+
+		<script>
+		function maakRecept() {
+			var ingrediënt1 = document.getElementById("i1").value; 
+			var ingrediënt2 = document.getElementById("i2").value; 
+			var bewerking = document.getElementById("b").value; 
+			var duur = document.getElementById("d").value; 
+            // waarden ophalen uit HTML-formulier
+			 document.getElementById("r").innerHTML= "Recept: " + " " + bewerking + " " + ingrediënt1 + " " + "en" + " " + ingrediënt2 + " " + "en" + " " + "kneed dit" + " " + duur;
+			// variabelen samenvoegen tot recepttekst
+			
+		}
+		</script>
+	</body>
+</html>
